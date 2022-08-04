@@ -3,22 +3,25 @@ package week6JavaFinalCodingProject;
 public class Card {
 	
 	// fields for card
-	int value;
-	String name;
+	private static int value;
+	private static String name;
+	
 	
 	// methods for card
-	public void GetValue() {
-		
-		
+	public static int getValue() {
+		return value;
 	}
-	
-	public void SetValue() {
-		
-		
+
+	public static void setValue(int value) {
+		Card.value = value;
 	}
-	
-	public void Describe() {
-		System.out.println(" ");
+
+	public static String getName() {
+		return name;
+	}
+
+	public static void setName(String name) {
+		Card.name = name;
 	}
 	
 
