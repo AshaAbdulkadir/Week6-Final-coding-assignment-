@@ -5,29 +5,54 @@ import java.util.List;
 
 public class Player {
 	
-	//field for Player
+	//1. c) Player
+	
+	//Fields
 	List<Card> hand = new ArrayList<Card>();
 	int score;
 	String name;
 	
-	//methods for Player
+	//Methods
 	
-	public void Decribe() {
-		System.out.println(" ");
+	public Player(String name1) {
+		name = name1;
+		score = 0;
 	}
 	
-	public void Flip() {
+	public void descibe() {
+		System.out.println(name);
+		for (Card card : hand) {
+			card.describe();
+		}
+	}
+	
+	//flip method
+	public Card flip() {
+		return hand.remove(0);
+	}
+	
+	//draw method
+	public void draw(Deck deck) {
+		hand.add(deck.draw());
 		
 	}
 	
-	public void Draw () {
-		
-		
+	// increment by 1 
+	public void incrementScore() {
+		score++;
+	}
+
+	public int getScore() {
+		return 0;
 	}
 	
-	public void IncrementScore () {
-		
-	}
+	
+
+	
+
+
+
+	
 
 
 
