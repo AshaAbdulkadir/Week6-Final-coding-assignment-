@@ -2,7 +2,7 @@ package week6JavaFinalCodingProject;
 
 import java.util.Scanner;
 
-//2. Class called App with main method
+//2. Class App with main method
 public class App {
 	static Scanner sc = new Scanner(System.in);
 	
